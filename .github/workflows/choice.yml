@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       log-level:
-        type: choice
+        type: choice  # manualではstrだったが, ここでchoiceを使用することで選択肢から選んで使用する用にできる
         options:
           - info
           - warn
